@@ -12,7 +12,7 @@ int main(void)
 	float e;
 
 printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(a));
-printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeoff(b));
+printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(b));
 printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(c));
 printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(d));
 printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(e));
