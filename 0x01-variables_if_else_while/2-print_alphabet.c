@@ -3,8 +3,14 @@
  * main - a program that prints the alphabet in lowercase
  * Return - 0
  */
-char main(void)
+int main(void)
 {
-	putchar("abcdefghijklmnopqrstuvwxyz");
+	char a;
+	while
+		(a <= 'z'){
+			putchar(a);
+			c++;
+
+	putchar('\n');
 	return (0);
 }
