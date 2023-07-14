@@ -18,3 +18,4 @@ for (lower = 'a'; lower <= 'z'; lower++)
 
 putchar('\n');
 return (0);
+}
