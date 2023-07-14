@@ -10,7 +10,7 @@ char lower;
 
 lower = 'a';
 while
-	(lower <= 'z' && lower != 'q' && lower = 'e') {
+	(lower <= 'z' && lower != 'q' && lower != 'e') {
 		putchar(lower);
 		lower++;
 	}
