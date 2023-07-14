@@ -8,14 +8,11 @@ int main(void)
 {
 	int number;
 
-	number = '1';
+	for (number = 0; number <= 9; number++)
+	{
+		putchar(number + '0');
+	}
 
-	while
-		(number <= '9')
-		{
-			putchar(number);
-			number++;
-		}
 	putchar("\n");
 	return (0);
 }
