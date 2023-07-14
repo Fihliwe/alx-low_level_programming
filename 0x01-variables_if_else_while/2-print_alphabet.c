@@ -5,14 +5,14 @@
  */
 int main(void)
 {
-	char a;
+	char letter;
 
-	a = 'a'
+	letter = 'a';
 	while
-		(a <= 'z'){
-			putchar(a);
-			a++;
-
+		(letter <= 'z') {
+			putchar(letter);
+			letter++;
+		}
 	putchar('\n');
 	return (0);
 }
