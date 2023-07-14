@@ -5,6 +5,6 @@
  */
 int main(void)
 {
-	puthcar("abcdefghijklmnopqrstuvwxyz");
+	putchar("abcdefghijklmnopqrstuvwxyz");
 	return (0);
 }
