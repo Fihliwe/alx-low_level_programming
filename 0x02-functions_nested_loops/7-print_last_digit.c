@@ -3,9 +3,8 @@
  * print_last_digit -  function that prints the last digit of a number.
  * Return: value of last digit ('l_digit')
  */
-int print_last_digit(int)
+int print_last_digit(int n)
 {
-	int n;
 	int l_digit;
 
 	if (n < 0)
