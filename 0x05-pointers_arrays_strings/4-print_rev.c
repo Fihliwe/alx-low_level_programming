@@ -6,6 +6,7 @@
  * return: 0
  */
 
+void print_rev(char *s)
 {
 	int length = 0;
 	int o;
