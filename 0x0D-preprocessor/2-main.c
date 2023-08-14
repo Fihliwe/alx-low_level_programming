@@ -1,4 +1,4 @@
-#include <stdlib>
+#include <stdio.h>
 
 /**
  * main - program will be runned
