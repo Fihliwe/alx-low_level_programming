@@ -3,9 +3,9 @@
 #include "lists.h"
 
 /**
- *
- *
- *
+ * print_listint - function to print elements of list
+ *@h: node
+ *Return: count
  */
 
 size_t print_listint(const listint_t *h)
