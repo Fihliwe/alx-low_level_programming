@@ -10,10 +10,10 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	char *buf;
-	ssize_t fd;
+	char *buff;
+	ssize_t fp;
 	ssize_t w;
-	ssize_t t;
+	ssize_t r;
 
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
@@ -22,7 +22,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	t = read(fd, buf, letters);
 	w = write(STDOUT_FILENO, buf, t);
 
-	free(buf);
-	close(fd);
+	free(buff);
+	close(fp);
 	return (w);
 }
