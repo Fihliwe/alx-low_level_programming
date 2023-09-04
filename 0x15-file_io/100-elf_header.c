@@ -70,25 +70,20 @@ void print_magic(unsigned char *e_ident)
 void print_class(unsigned char *e_ident)
 {
 	printf(" Class: ");
-	unsigned char e_class = e_ident[EI_CLASS];
-	if (e_class == ELFCLASSNONE)
-	{
-		printf("none\n");
-	}
-    
-	else if (e_class == ELFCLASS32)
-	{
-		printf("ELF32\n");
-	}
-    
-	else if (e_class == ELFCLASS64)
-	{
-		printf("ELF64\n");
-	}
 
-	else
+	switch (e_ident[EI_CLASS])
 	{
-		printf("<unknown: %x>\n", e_class);    
+	case ELFCLASSNONE:
+		printf("none\n");
+		break;
+	case ELFCLASS32:
+		printf("ELF32\n");
+		break;
+	case ELFCLASS64:
+		printf("ELF64\n");
+		break;
+	default:
+		printf("<unknown: %x>\n", e_ident[EI_CLASS]);
 	}
 }
 
@@ -100,25 +95,19 @@ void print_class(unsigned char *e_ident)
 void print_data(unsigned char *e_ident)
 {
 	printf(" Data: ");
-	unsigned char e_data = e_ident[EI_DATA];
 
-	if (e_data == ELFDATANONE)
+	switch (e_ident[EI_DATA])
 	{
-
+	case ELFDATANONE:
 		printf("none\n");
-	}
-	else if (e_data == ELFDATA2LSB)
-	{
+		break;
+	case ELFDATA2LSB:
 		printf("2's complement, little endian\n");
-	}
-
-	if (e_data == ELFDATA2MSB)
-	{
+		break;
+	case ELFDATA2MSB:
 		printf("2's complement, big endian\n");
-	}
-
-	else
-	{
+		break;
+	default:
 		printf("<unknown: %x>\n", e_ident[EI_CLASS]);
 	}
 }
